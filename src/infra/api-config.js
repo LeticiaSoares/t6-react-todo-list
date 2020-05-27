@@ -6,7 +6,7 @@ import { getUser } from './local-storage'
 //     timeout: 5000,
 // }).get('/ping')
 const config = {
-    baseURL : 'https://lehtodoapi.herokuapp.com/',
+    baseURL : 'https://leh-todo-v2.herokuapp.com/',
     timeout: 5000,
     headers: ''
 }
