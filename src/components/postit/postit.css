@@ -6,7 +6,7 @@
     width: 100%;
     padding: 1rem;
     margin: 0 0 1.5rem;
-    background: #ECDDF3;
+    background: #fb7c7c;
     border-radius: 2px;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14);
 }
@@ -27,7 +27,6 @@
 
 .postit__button-remove {
     cursor: pointer;
-    margin-left: auto;
     float: right;
 }
 
@@ -64,4 +63,10 @@
         margin-left: 5%;
         margin-right: 5%;
     }
+}
+
+
+.postit__container{
+    display: flex;
+    flex-direction: column;
 }

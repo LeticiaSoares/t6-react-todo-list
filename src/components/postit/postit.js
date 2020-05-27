@@ -53,7 +53,7 @@ class Postit extends React.Component {
                 })
                 .catch((error)=>{
                     console.log(error)
-                }) 
+                })
 
         }else{
 
@@ -77,9 +77,9 @@ class Postit extends React.Component {
                 })
                 .catch((error)=>{
                     console.log(error)
-                })        
+                })
         }
-   
+
     }
     setTitle = (e) => {
         const inputTitle = e.target.value
@@ -105,37 +105,39 @@ class Postit extends React.Component {
                 <input className='postit__color' type='color' onChange={this.setColor}/>
                 <Form onSubmit={this.handlePostitSubmit}>
                     {this.state.editing  && (
-                                <button 
+                                <button
                                     type='button'
-                                    onClick={this.handlePostitRemove} 
+                                    onClick={this.handlePostitRemove}
                                     className='postit__button-remove'
                                 >
-                                   X 
+                                   X
                                 </button>
                             )
 
                     }
-                    
-                   <input 
-                        type='text' 
-                        className='postit__title' 
-                        placeholder='Título' 
-                        name='title'
-                        value={this.state.title}
-                        onChange={this.setTitle}
-                   /> 
-                   <textarea 
-                        className='postit__text'
-                        placeholder='Digite o texto...'
-                        name='text'
-                        value={this.state.text}
-                        onChange={this.setText}
-                   />    
-                   {this.state.editing && 
-                            (<button className='postit__button-completed'>
-                                 Concluído
-                            </button>)
-                   }
+                    <div className='postit__container'>
+                        <input
+                            type='text'
+                            className='postit__title'
+                            placeholder='Título'
+                            name='title'
+                            value={this.state.title}
+                            onChange={this.setTitle}
+                        />
+                        <textarea
+                            className='postit__text'
+                            placeholder='Digite o texto...'
+                            name='text'
+                            value={this.state.text}
+                            onChange={this.setText}
+                        />
+                        {this.state.editing &&
+                        (<button className='postit__button-completed'>
+                            Concluído
+                        </button>)
+                        }
+                    </div>
+
                 </Form>
             </div>
         )
