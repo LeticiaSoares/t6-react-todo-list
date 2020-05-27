@@ -1,7 +1,7 @@
 <h1>Repositório para aulas de React - Reprograma</h1>
 
 
-<center>![](todolist.gif)</center>
+![](todolist.gif)
 
 <h2>Todo List React</h2>
 
