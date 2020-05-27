@@ -1,5 +1,8 @@
-<h1>Todo List React</h1>
+<h1>Repositório para aulas de React - Reprograma</h1>
 
+<h2>Todo List React</h2>
+
+![](todolist.gif)
 Guia para Front End Developers
 
 https://frontendmasters.com/books/front-end-handbook/2018/learning/internet.html
